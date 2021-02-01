@@ -1,0 +1,19 @@
+{
+  "name": "microv-wk3-bootstrap",
+  "version": "1.0.0",
+  "description": "project fro week 3 in microvers",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/memelopez/microv-wk3-bootstrap.git"
+  },
+  "author": "Elmer and JP",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/memelopez/microv-wk3-bootstrap/issues"
+  },
+  "homepage": "https://github.com/memelopez/microv-wk3-bootstrap#readme"
+}
