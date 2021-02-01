@@ -1,5 +1,18 @@
 /* basic styles */
 
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 0 none;
+  list-style: none outside none;
+  margin: 0;
+  outline: 0 none;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
   font-size: 15px;
   line-height: 20px;
@@ -7,4 +20,90 @@ body {
   color: #333;
   font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* navbar */
+
+.container-fluid,
+.container {
+  max-width: 1310px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.page-header {
+  z-index: 10;
+  position: relative;
+}
+
+.page-header .container {
+  position: relative;
+}
+
+.header-middle {
+  position: relative;
+  padding: 15px;
+}
+
+.page-header .header-middle {
+  background-color: #f72210;
+}
+
+.genericon-menu {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+}
+
+.genericon {
+  font-size: 26px;
+  vertical-align: top;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+}
+
+.genericon-menu > span {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.genericon-menu > span,
+.genericon-menu::before,
+.genericon-menu::after {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.55);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.genericon-menu::before,
+.genericon-menu::after {
+  content: "";
+}
+
+.page-header .brand svg {
+  fill: white;
+  display: block;
+  width: 132px;
+  height: 20px;
 }
