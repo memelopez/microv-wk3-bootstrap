@@ -140,3 +140,14 @@ footer .about-links li {
   color: #666;
   margin-bottom: 12px;
 }
+
+/* main styles goes below */
+
+.my-container > section > div {
+  /* background-color: red; */
+  padding: 1rem;
+}
+
+main .feature-h2, main .top-story-h2 {
+  font-size: 14px;
+}
