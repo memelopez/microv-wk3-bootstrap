@@ -9,8 +9,6 @@
   margin: 0;
   outline: 0 none;
   padding: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -22,17 +20,43 @@ body {
   overflow-x: hidden;
 }
 
-div {
-  display: block;
+footer .footer-logo {
+  fill: red;
+  font-size: 2rem;
+  height: 3.3rem;
 }
 
-footer svg {
-  height: 7rem;
-  width: 7rem;
-  color: red;
+footer i {
+  color: gray;
+  padding: 0.6rem;
+  font-size: 2.2rem;
+}
+
+.copy-right-footer {
+  font-size: 13px;
+}
+
+footer .editions-links li,
+footer .about-links li {
+  padding: 0 1rem;
+  border-left: 1px solid rgb(66, 65, 65);
+}
+
+footer .about-links li {
+  font-size: 14px;
 }
 
 /* navbar */
+
+.navbar {
+  height: 50px;
+  background-color: #f72210;
+}
+
+.logoNav {
+  height: 20px;
+  fill: white;
+}
 
 .navbar .brand svg {
   fill: white;
@@ -95,7 +119,6 @@ footer svg {
 
 .genericon {
   font-size: 26px;
-  vertical-align: top;
   text-align: center;
   display: block;
   cursor: pointer;
