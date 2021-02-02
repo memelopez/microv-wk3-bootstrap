@@ -22,20 +22,41 @@ body {
   overflow-x: hidden;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+div {
+  display: block;
+}
+
+footer svg {
+  height: 7rem;
+  width: 7rem;
+  color: red;
 }
 
 /* navbar */
 
-.container-fluid,
-.container {
-  max-width: 1310px;
-  margin-right: auto;
-  margin-left: auto;
+.navbar .brand svg {
+  fill: white;
 }
 
+.mainNav {
+  background-color: #f72210;
+}
+
+.mainNav .brand svg {
+  fill: white;
+  width: 200px;
+}
+
+.iconUser {
+  background: url(https://img.icons8.com/metro/26/ffffff/user-male.png) center /
+    contain no-repeat;
+  width: 50px;
+  height: 50px;
+  padding-left: 0;
+  opacity: 0.75;
+}
+
+/* -------------------------- */
 .page-header {
   z-index: 10;
   position: relative;
@@ -106,4 +127,17 @@ a {
   display: block;
   width: 132px;
   height: 20px;
+}
+
+/* footer */
+.element-invisible {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  overflow: hidden;
+  height: 1px;
+}
+
+.page-footer .social {
+  color: #666;
+  margin-bottom: 12px;
 }
