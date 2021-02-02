@@ -22,9 +22,10 @@ body {
   overflow-x: hidden;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+footer svg {
+  height: 7rem;
+  width: 7rem;
+  color: red;
 }
 
 /* navbar */
@@ -106,4 +107,17 @@ a {
   display: block;
   width: 132px;
   height: 20px;
+}
+
+/* footer */
+.element-invisible {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  overflow: hidden;
+  height: 1px;
+}
+
+.page-footer .social {
+  color: #666;
+  margin-bottom: 12px;
 }
