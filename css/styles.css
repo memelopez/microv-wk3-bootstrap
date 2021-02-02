@@ -22,10 +22,29 @@ body {
   overflow-x: hidden;
 }
 
-footer svg {
-  height: 7rem;
-  width: 7rem;
-  color: red;
+footer .footer-logo {
+  fill: red;
+  font-size: 2rem;
+  height: 3.3rem;
+}
+
+footer i {
+  color: gray;
+  padding: 0.6rem;
+  font-size: 2.2rem;
+}
+
+.copy-right-footer {
+  font-size: 13px;
+}
+
+footer .editions-links li, footer .about-links li {
+  padding: 0 1rem;
+  border-left: 1px solid rgb(66, 65, 65);
+}
+
+footer .about-links li {
+  font-size: 14px;
 }
 
 /* navbar */
