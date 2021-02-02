@@ -22,6 +22,12 @@ body {
   overflow-x: hidden;
 }
 
+footer svg {
+  height: 7rem;
+  width: 7rem;
+  color: red;
+}
+
 /* navbar */
 
 .container-fluid,
@@ -104,18 +110,12 @@ body {
 }
 
 /* footer */
-footer svg {
-  height: 7rem;
-  width: 7rem;
-  color: red;
-}
-
 .element-invisible {
-    position: absolute;
-    clip: rect(1px 1px 1px 1px);
-    clip: rect(1px,1px,1px,1px);
-    overflow: hidden;
-    height: 1px;
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px 1px 1px 1px);
+  overflow: hidden;
+  height: 1px;
 }
 
 .page-footer .social {
