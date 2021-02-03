@@ -148,6 +148,13 @@ footer .about-links li {
   }
 }
 
+@media (min-width: 992px) {
+  .logoNav {
+    height: 60px;
+    width: 250px;
+  }
+}
+
 /* footer */
 .element-invisible {
   position: absolute;
