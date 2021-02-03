@@ -173,8 +173,11 @@ footer .about-links li {
   display: block;
   width: 29px;
   height: 28px;
-  background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain
-    no-repeat #f72210;
+  background-image: url(https://g.newsweek.com/www/images/logo-n1.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #f72210;
   margin-right: 10px;
 }
 
