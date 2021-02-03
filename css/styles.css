@@ -155,6 +155,29 @@ footer .about-links li {
   }
 }
 
+/* page-bottom */
+
+.magazine {
+  margin-top: 20px;
+}
+
+.magazine header {
+  font: bold 19px/19px "Roboto Condensed", sans-serif;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.iconmagaz {
+  -webkit-flex: none;
+  flex: none;
+  display: block;
+  width: 29px;
+  height: 28px;
+  background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain
+    no-repeat #f72210;
+  margin-right: 10px;
+}
+
 /* footer */
 .element-invisible {
   position: absolute;
