@@ -160,3 +160,23 @@ footer .about-links li {
   color: #666;
   margin-bottom: 12px;
 }
+
+/* main styles goes below */
+
+.my-container > section > div {
+  padding: 1rem;
+}
+
+main .feature-h2,
+main .top-story-h2 {
+  font-size: 14px;
+}
+
+main .stories-child {
+  border-top: 1px solid rgb(209, 197, 197);
+  border-bottom: 1px solid rgb(197, 192, 192);
+}
+
+main .stories-child .image {
+  margin-right: 1rem;
+}
