@@ -25,15 +25,17 @@
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
       crossorigin="anonymous"
     />
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   </head>
   <body>
-    <div class="container-fluid bg-lightblue">
+    <div class="container-fluid bg-white">
         <header>
-            <nav class="navbar row">
-                <div class="col-3 d-none">
+            <nav class="mainNav row d-flex justify-content-between m-y-0 align-items-center">
+                <div class="d-none">
                     Tue, Feb 02, 2021
                 </div>
-                <div class="col-5 col-sm-8">
+                <div class="col-5 d-flex align-items-center">
                     <a href="#">
                         <svg
                             class="logoNav"
@@ -56,6 +58,22 @@
                             </g>
                     </svg>
                     </a>
+                </div>
+                <div class="col-7 d-flex justify-content-end align-items-center">
+                    <ul class="rightBtns d-flex justify-content-around align-items-center">
+                        <li class="logIn d-none d-md-block text-uppercase text-white">Login</li>
+                        <li class="d-md-none p-2">
+                            <a href="#"><i class="fas fa-user-alt text-white"></i></a>
+                        </li>
+                        <li class="p-2">
+                            <button class="sub d-flex align-items-center border border-white">Subscribe</button>
+                        </li>
+                        <li class="p-2">
+                            <span class="burger1">
+                                <span></span>
+                            </span>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </header>
