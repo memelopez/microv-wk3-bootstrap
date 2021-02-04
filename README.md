@@ -24,11 +24,11 @@ We applied botstrap all trough the project to achieve the desired lay out.
 - Twitter: [@memelopez10](https://twitter.com/memelopez10)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/elmer-lopez-51b187200/)
 
-👤 **Author2**
+👤 **Promise Johnson**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
+- GitHub: [promise-J](https://github.com/promise-J)
+- Twitter: [@twitterhandle](https://twitter.com/Promise94353263)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/promise-chiemela-788887142)
 
 ## 🤝 Contributing
 

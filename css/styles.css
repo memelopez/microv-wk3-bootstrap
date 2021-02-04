@@ -554,3 +554,76 @@ main .stories-child .image {
 .magas article .category span.cat a {
   color: #f72210;
 }
+
+/* section pick here */
+
+.section-picks {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 30px;
+}
+
+.section-picks-h3 {
+  font-size: 18px;
+  line-height: 18px;
+  text-align: left;
+}
+
+.section-picks-h3:hover,
+.feature-h3:hover,
+.title:hover,
+.author-name:hover,
+.stories-h3:hover {
+  text-decoration: underline;
+  text-decoration-color: #f72210;
+}
+
+.section-picks-span {
+  padding: 15px 0;
+}
+
+.section-picks-span span {
+  margin-right: 15px;
+  padding: 5px;
+}
+
+.pick-magazine {
+  padding-bottom: 30px;
+}
+
+.pick-img {
+  position: relative;
+  min-height: 33px;
+}
+
+.section-picks a {
+  color: #0d6efd;
+}
+
+.pick-heading {
+  font-size: 18px;
+  line-height: 18px;
+  text-align: left;
+}
+
+div {
+  display: block;
+}
+
+.side-story {
+  border-top: 1px solid rgb(175, 171, 171);
+  padding: 14px 0;
+}
+
+.side-story .image {
+  margin-bottom: 10px;
+  margin-right: 15px;
+}
+
+.side-story.heading {
+  font-size: 17px;
+  line-height: 20px;
+}
