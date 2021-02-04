@@ -26,6 +26,28 @@ ul {
   margin: 0;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+.h2,
+.h3,
+.h4 {
+  font-family: "Roboto Condensed", sans-serif;
+  margin-bottom: 10px;
+  position: relative;
+  color: black;
+  font-weight: bold;
+}
+
+
+
 footer .footer-logo {
   fill: red;
   font-size: 2rem;
@@ -155,11 +177,21 @@ footer .about-links li {
   }
 }
 
-/* page-bottom */
+/* --------- -----------------------------------
+page-bottom
+ --------------------------------------- */
 
-.magazine,
-.editors {
-  margin-top: 20px;
+.page-bottom {
+  margin-bottom: 60px;
+}
+
+/* into the magazine  */
+.magazine {
+  margin: 20px 0;
+}
+
+.editors img {
+  width: 100%;
 }
 
 .magazine header,
@@ -167,6 +199,8 @@ footer .about-links li {
   font: bold 19px/19px "Roboto Condensed", sans-serif;
   margin-bottom: 15px;
   text-transform: uppercase;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 8px;
 }
 
 .iconmagaz {
@@ -183,14 +217,13 @@ footer .about-links li {
   margin-right: 10px;
 }
 
-
-/* editor's section */
-.editors article {
-  padding-bottom: 20px;
+.imagemaga img {
+  width: 100%;
+  height: auto;
   display: block;
 }
 
-.editors div.image a.zero {
+div.imagemaga a.zeromaga {
   display: block;
   height: 100%;
   position: absolute;
@@ -201,39 +234,272 @@ footer .about-links li {
   bottom: 0;
 }
 
-.editors img {
-  border: red solid 1px;
-  height: 180px;
+.seallfeatures {
+  display: block;
+  background-color: #f4f5f6;
+  color: black;
+  text-align: center;
+  margin-bottom: 0;
+  font: bold 18px/18px "Roboto Condensed", sans-serif;
 }
 
-.editors .feature2 .category {
+.magas article .imagemaga2 picture {
   display: block;
-  font: bold 17px/16px "Roboto Condensed",sans-serif;
+  position: relative;
+  padding-bottom: 100%;
+  overflow: hidden;
+  height: 60%;
+}
+
+.imagemaga2 img {
+  transform: translate(-50%, 0%);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: auto;
+  height: 100%;
+  max-width: inherit;
+}
+
+.magas article .category span {
+  display: inline-block;
+}
+
+.magas article .category span:first-of-type {
+  padding: 0 7px;
+  background-color: #f72210;
+  color: white;
+  margin-right: 7px;
+}
+
+.magazine h5 {
+  margin-bottom: 30px;
+}
+
+.magas article h5 {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+/* --------- editor's picks --------------- */
+
+.editors {
+  margin-bottom: 30px;
+}
+
+.editors .category {
+  display: block;
+  font: bold 17px/16px "Roboto Condensed", sans-serif;
   color: #f72210;
   text-transform: uppercase;
   padding: 8px 15px 9px;
-  background-color: rgba(255,255,255,.9);
+  background-color: rgba(255, 255, 255, 0.9);
   position: absolute;
   bottom: 0;
   left: 0;
   z-index: 1;
 }
 
-@media all and (max-width: 777px) {
-  .editors img {
-    width: 90%;
-    margin: 1rem;
-  }
+.editors article h3 a {
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
 }
 
+/* ------------ subscribe -------------------- */
 
-/* footer */
+.subscribe-block > div > div {
+  margin-bottom: 20px;
+  background-color: #f4f5f6;
+}
+
+.block-title {
+  font: bold 16px/16px "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 11px;
+  color: rgba(12, 11, 11, 0.8);
+}
+
+.block-title.red {
+  color: #f72210;
+}
+
+.subscribe-block .subsad {
+  background-color: #f4f5f6;
+  padding: 24px 0 20px;
+}
+
+.adcon .image {
+  position: relative;
+  padding-bottom: 13px;
+  padding-right: 90px;
+}
+
+.subscribe-block .mag-thumb {
+  width: 170px;
+  height: 228px;
+}
+
+.subscribe-block.image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.subscribe-block .mag-thumb.current {
+  position: absolute;
+  top: 13px;
+  left: 80px;
+}
+
+.f1 {
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+.subscribe-block h3 {
+  line-height: 28px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-family: "Roboto Condensed", sans-serif;
+  position: relative;
+  color: black;
+  font-weight: bold;
+}
+
+.subscribe-block p {
+  font: 300 15px/21px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+.subscribe-block .pelcro-subscribe-button {
+  position: relative;
+  font: bold 18px/18px "Roboto Condensed", sans-serif;
+  cursor: pointer;
+  background-color: #f72310;
+  color: white;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 10px 10px 10px 12px;
+  border-radius: 3px;
+}
+
+.subscribe-block .pelcro-subscribe-button::after {
+  width: 6px;
+  height: 11px;
+  content: "›";
+  display: inline-block;
+  margin-left: 9px;
+}
+
 .element-invisible {
   position: absolute;
   clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
   overflow: hidden;
   height: 1px;
 }
+
+.subscribe-block .free-signup input {
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+}
+
+.free-signup .form-text {
+  color: #555;
+  font-size: 14px;
+  background-color: white;
+  border: 1px solid #e0e1e1;
+  text-indent: 9px;
+}
+
+.free-signup .form-submit {
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  background-image: url(https://g.newsweek.com/www/images/free-sign-up.svg);
+  background-position: center;
+  background-size: 108px;
+  background-repeat: no-repeat;
+  background-color: #f61602;
+  border-radius: 3px;
+}
+
+/* responsive subscribe  */
+
+@media (max-width: 768px) {
+  .subscribe-block > div > div {
+    position: relative;
+    padding-top: 39px !important;
+  }
+
+  .subscribe-block .adcon {
+    text-align: center;
+  }
+
+  .adcon .image {
+    display: inline-block;
+    margin-bottom: 15px;
+    height: 160px;
+  }
+
+  .subscribe-block .col-r .image {
+    height: 170px;
+  }
+
+  /* .subscribe-block > div > div::before {
+    content: "";
+    display: block;
+    height: 18px;
+    background-color: #f4f5f7;
+    border-top: 1px solid #e2e2e2;
+    position: absolute;
+    top: 0;
+    left: -15px;
+    right: -15px;
+  } */
+}
+
+@media (max-width: 991px) {
+  .subscribe-block .col-r .info {
+    padding: 25px 20px 30px;
+  }
+
+  .subscribe-block .col-r {
+    text-align: center;
+  }
+
+  .subscribe-block .col-r h3 {
+    text-transform: uppercase;
+  }
+
+  .subscribe-block .col-r form {
+    display: flex;
+  }
+
+  .subscribe-block .col-r .form-submit {
+    border-radius: 0 3px 3px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-block {
+    position: relative;
+    padding: 40px 30px 0;
+    max-width: 1310px;
+    margin: auto;
+    background: #fff;
+  }
+}
+
+/* ----------------------------------------
+footer
+------------------------------------ */
 
 .page-footer .social {
   color: #666;
@@ -259,3 +525,110 @@ main .stories-child {
 main .stories-child .image {
   margin-right: 1rem;
 }
+
+/* stuff we need to bring down couse of linters */
+
+.magas article .category {
+  font: bold 16px/26px "Roboto Condensed", sans-serif;
+  color: #f72210;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.editors article .category a {
+  color: #f72210;
+}
+
+.firstmaga .wrapmaga .category a {
+  display: block;
+  font: bold 16px/33px "Roboto Condensed", sans-serif;
+  color: #f72210;
+  text-transform: uppercase;
+  padding: 0 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.magas article .category span.cat a {
+  color: #f72210;
+}
+
+
+/* section pick here */
+
+.section-picks {
+  width: 100%;
+  padding-right: var(--bs-gutter-x,.75rem);
+  padding-left: var(--bs-gutter-x,.75rem);
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 30px;
+}
+
+.section-picks-h3 {
+  font-size: 18px;
+  line-height: 18px;
+  text-align: left;
+}
+
+.section-picks-h3:hover,
+.feature-h3:hover,
+.title:hover,
+.author-name:hover,
+.stories-h3:hover {
+  text-decoration: underline;
+  text-decoration-color: #f72210;
+}
+
+.section-picks-span {
+  padding: 15px 0;
+}
+
+.section-picks-span span {
+  margin-right: 15px;
+  padding: 5px;
+}
+
+.pick-magazine {
+  padding-bottom: 30px;
+}
+
+.pick-img {
+  position: relative;
+  min-height: 33px;
+}
+
+.section-picks a {
+  color: #0d6efd;
+}
+
+.pick-heading {
+  font-size: 18px;
+  line-height: 18px;
+  text-align: left;
+}
+
+div {
+  display: block;
+}
+
+.side-story {
+  border-top: 1px solid rgb(175, 171, 171);
+  padding: 14px 0;
+}
+
+.side-story .image {
+  margin-bottom: 10px;
+  margin-right: 15px;
+}
+
+.side-story.heading {
+  font-size: 17px;
+  line-height: 20px;
+}
+
+
