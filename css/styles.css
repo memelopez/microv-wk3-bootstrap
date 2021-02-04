@@ -157,11 +157,13 @@ footer .about-links li {
 
 /* page-bottom */
 
-.magazine {
+.magazine,
+.editors {
   margin-top: 20px;
 }
 
-.magazine header {
+.magazine header,
+.editors header {
   font: bold 19px/19px "Roboto Condensed", sans-serif;
   margin-bottom: 15px;
   text-transform: uppercase;
@@ -180,6 +182,50 @@ footer .about-links li {
   background-color: #f72210;
   margin-right: 10px;
 }
+
+
+/* editor's section */
+.editors article {
+  padding-bottom: 20px;
+  display: block;
+}
+
+.editors div.image a.zero {
+  display: block;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.editors img {
+  border: red solid 1px;
+  height: 180px;
+}
+
+.editors .feature2 .category {
+  display: block;
+  font: bold 17px/16px "Roboto Condensed",sans-serif;
+  color: #f72210;
+  text-transform: uppercase;
+  padding: 8px 15px 9px;
+  background-color: rgba(255,255,255,.9);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+@media all and (max-width: 777px) {
+  .editors img {
+    width: 90%;
+    margin: 1rem;
+  }
+}
+
 
 /* footer */
 .element-invisible {
