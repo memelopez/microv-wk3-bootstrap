@@ -46,8 +46,6 @@ h6,
   font-weight: bold;
 }
 
-
-
 footer .footer-logo {
   fill: red;
   font-size: 2rem;
@@ -557,13 +555,12 @@ main .stories-child .image {
   color: #f72210;
 }
 
-
 /* section pick here */
 
 .section-picks {
   width: 100%;
-  padding-right: var(--bs-gutter-x,.75rem);
-  padding-left: var(--bs-gutter-x,.75rem);
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
   margin-left: auto;
   padding-bottom: 30px;
@@ -630,5 +627,3 @@ div {
   font-size: 17px;
   line-height: 20px;
 }
-
-
