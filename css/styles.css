@@ -175,7 +175,9 @@ footer .about-links li {
   }
 }
 
-/* page-bottom */
+/* --------- -----------------------------------
+page-bottom
+ --------------------------------------- */
 
 .page-bottom {
   margin-bottom: 60px;
@@ -279,6 +281,10 @@ div.imagemaga a.zeromaga {
 
 /* --------- editor's picks --------------- */
 
+.editors {
+  margin-bottom: 30px;
+}
+
 .editors .category {
   display: block;
   font: bold 17px/16px "Roboto Condensed", sans-serif;
@@ -299,13 +305,199 @@ div.imagemaga a.zeromaga {
   font-weight: bold;
 }
 
-/* footer */
+/* ------------ subscribe -------------------- */
+
+.subscribe-block > div > div {
+  margin-bottom: 20px;
+  background-color: #f4f5f6;
+}
+
+.block-title {
+  font: bold 16px/16px "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 11px;
+  color: rgba(12, 11, 11, 0.8);
+}
+
+.block-title.red {
+  color: #f72210;
+}
+
+.subscribe-block .subsad {
+  background-color: #f4f5f6;
+  padding: 24px 0 20px;
+}
+
+.adcon .image {
+  position: relative;
+  padding-bottom: 13px;
+  padding-right: 90px;
+}
+
+.subscribe-block .mag-thumb {
+  width: 170px;
+  height: 228px;
+}
+
+.subscribe-block.image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.subscribe-block .mag-thumb.current {
+  position: absolute;
+  top: 13px;
+  left: 80px;
+}
+
+.f1 {
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+.subscribe-block h3 {
+  line-height: 28px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-family: "Roboto Condensed", sans-serif;
+  position: relative;
+  color: black;
+  font-weight: bold;
+}
+
+.subscribe-block p {
+  font: 300 15px/21px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+.subscribe-block .pelcro-subscribe-button {
+  position: relative;
+  font: bold 18px/18px "Roboto Condensed", sans-serif;
+  cursor: pointer;
+  background-color: #f72310;
+  color: white;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 10px 10px 10px 12px;
+  border-radius: 3px;
+}
+
+.subscribe-block .pelcro-subscribe-button::after {
+  width: 6px;
+  height: 11px;
+  content: "›";
+  display: inline-block;
+  margin-left: 9px;
+}
+
 .element-invisible {
   position: absolute;
   clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
   overflow: hidden;
   height: 1px;
 }
+
+.subscribe-block .free-signup input {
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+}
+
+.free-signup .form-text {
+  color: #555;
+  font-size: 14px;
+  background-color: white;
+  border: 1px solid #e0e1e1;
+  text-indent: 9px;
+}
+
+.free-signup .form-submit {
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  background-image: url(https://g.newsweek.com/www/images/free-sign-up.svg);
+  background-position: center;
+  background-size: 108px;
+  background-repeat: no-repeat;
+  background-color: #f61602;
+  border-radius: 3px;
+}
+
+/* responsive subscribe  */
+
+@media (max-width: 768px) {
+  .subscribe-block > div > div {
+    position: relative;
+    padding-top: 39px !important;
+  }
+
+  .subscribe-block .adcon {
+    text-align: center;
+  }
+
+  .adcon .image {
+    display: inline-block;
+    margin-bottom: 15px;
+    height: 160px;
+  }
+
+  .subscribe-block .col-r .image {
+    height: 170px;
+  }
+
+  /* .subscribe-block > div > div::before {
+    content: "";
+    display: block;
+    height: 18px;
+    background-color: #f4f5f7;
+    border-top: 1px solid #e2e2e2;
+    position: absolute;
+    top: 0;
+    left: -15px;
+    right: -15px;
+  } */
+}
+
+@media (max-width: 991px) {
+  .subscribe-block .col-r .info {
+    padding: 25px 20px 30px;
+  }
+
+  .subscribe-block .col-r {
+    text-align: center;
+  }
+
+  .subscribe-block .col-r h3 {
+    text-transform: uppercase;
+  }
+
+  .subscribe-block .col-r form {
+    display: flex;
+  }
+
+  .subscribe-block .col-r .form-submit {
+    border-radius: 0 3px 3px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-block {
+    position: relative;
+    padding: 40px 30px 0;
+    max-width: 1310px;
+    margin: auto;
+    background: #fff;
+  }
+}
+
+/* ----------------------------------------
+footer
+------------------------------------ */
 
 .page-footer .social {
   color: #666;
