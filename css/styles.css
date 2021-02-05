@@ -152,6 +152,41 @@ footer .about-links li {
   margin-bottom: 2px;
 }
 
+.lowerNav {
+  position: absolute;
+  top: -10px;
+  left: -15px;
+  width: 100%;
+}
+
+.leaf {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.header-bottom {
+  padding-top: 15px;
+  z-index: 1;
+  background-color: white;
+}
+
+.page-nav {
+  padding-left: 0;
+}
+
+.trending-topics-wrapper {
+  border-top: 1px solid #dedede;
+  margin-top: 13px;
+  padding-top: 8px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #f4f5f6;
+}
+
+.trending-topics {
+  padding-left: 0;
+}
+
 /* --------- responsive navbar----------------- */
 
 @media (min-width: 768px) {
@@ -171,9 +206,65 @@ footer .about-links li {
 @media (min-width: 992px) {
   .logoNav {
     height: 60px;
-    width: 250px;
+    width: 396px;
+    margin: 10px auto 0;
+  }
+
+  .mainNav {
+    z-index: 3;
+    padding: 15px 0;
+  }
+
+  .trending-topics {
+    display: -webkit-flex;
+    display: flex;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .trending-topics li {
+    flex: none;
+    text-align: center;
+    padding: 0 0 0 15px;
+  }
+
+  ul.page-nav li {
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    text-align: center;
+    border-left-width: 1px;
+    border-left-style: solid;
+  }
+
+  ul.page-nav li:first-child {
+    border-left-width: 0;
+  }
+
+  .header-bottom ul.page-nav li {
+    border-left-color: #d9d9d9;
+  }
+
+  header .lowerNav .header-bottom {
+    padding-right: 110px;
+  }
+
+  .my-container {
+    margin-top: 70px;
   }
 }
+
+@media (max-width: 991px) {
+  .my-container {
+    margin-top: 40px;
+  }
+}
+
+/* ---------------------------------------------
+main
+---------------------------------------- */
 
 /* --------- -----------------------------------
 page-bottom
@@ -362,12 +453,6 @@ div.imagemaga a.zeromaga {
   width: 170px;
   height: 228px;
 }
-
-/* .backleft {
-  position: absolute;
-  top: 0;
-  left: 10px;
-} */
 
 .frontright {
   position: absolute;
@@ -574,6 +659,19 @@ main .stories-child {
 }
 
 /* stuff we need to bring down couse of linters */
+
+.header-bottom ul a {
+  color: black;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.trending-topics-wrapper ul a {
+  font: 16px/18px "Roboto Condensed", sans-serif;
+  color: #807f84;
+}
 
 .magas article .category span {
   display: inline-block;
