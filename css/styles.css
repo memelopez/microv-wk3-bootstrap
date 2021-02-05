@@ -120,18 +120,9 @@ footer .about-links li {
 }
 
 .burger1 {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
   width: 30px;
   height: 30px;
   vertical-align: top;
-  text-align: center;
 }
 
 .burger1::before,
@@ -571,6 +562,11 @@ footer
 .page-footer .social {
   color: #666;
   margin-bottom: 12px;
+}
+
+.main-footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* main styles goes below */
