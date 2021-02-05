@@ -4,6 +4,10 @@
 
 > Clone of THE NEWSWEEK page using Bootstrap
 
+<img src="img/ScreenShot-desktop.png" width="700">
+<img src="img/ScreenShot-tablet.png" width="600">
+<img src="img/ScreenShot-mablet.png" width="500">
+
 We applied botstrap all trough the project to achieve the desired lay out.
 
 ## Built With
