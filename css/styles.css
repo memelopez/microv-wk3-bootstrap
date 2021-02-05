@@ -569,6 +569,16 @@ footer
   padding-bottom: 30px;
 }
 
+.main-footer .copyright {
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+/* respoive footer  */
+
 /* main styles goes below */
 
 .my-container > section > div {
