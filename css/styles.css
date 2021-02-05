@@ -259,17 +259,6 @@ div.imagemaga a.zeromaga {
   max-width: inherit;
 }
 
-.magas article .category span {
-  display: inline-block;
-}
-
-.magas article .category span:first-of-type {
-  padding: 0 7px;
-  background-color: #f72210;
-  color: white;
-  margin-right: 7px;
-}
-
 .magazine h5 {
   margin-bottom: 30px;
 }
@@ -298,19 +287,13 @@ div.imagemaga a.zeromaga {
   z-index: 1;
 }
 
-.editors article h3 a {
-  font-size: 24px;
-  line-height: 24px;
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: bold;
-}
-
 /* ------------ subscribe -------------------- */
 
 .subscon,
 .subsmain {
   background-color: #f4f5f6;
 }
+
 .subscribe-block img {
   width: 100%;
   height: auto;
@@ -404,11 +387,6 @@ div.imagemaga a.zeromaga {
   margin-bottom: 15px;
 }
 
-.subscribe-block h3 {
-  line-height: 28px;
-  margin-bottom: 15px;
-}
-
 .subscribe-block p {
   font: 300 15px/21px "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 20px;
@@ -421,8 +399,11 @@ div.imagemaga a.zeromaga {
   font-weight: bold;
   font-size: 0;
   font-family: "Roboto Condensed", sans-serif;
-  background: url(https://g.newsweek.com/www/images/free-sign-up.svg)
-    center/108px no-repeat #f61602;
+  background-image: url(https://g.newsweek.com/www/images/free-sign-up.svg);
+  background-position: center;
+  background-size: 108px;
+  background-repeat: no-repeat;
+  background-color: #f61602;
   border-radius: 0 3px 3px 0;
 }
 
@@ -453,10 +434,12 @@ div.imagemaga a.zeromaga {
   .newscon {
     background-color: white;
   }
+
   .newsmain {
     display: flex;
     flex-direction: row;
   }
+
   .imgnews,
   .newsmain .txtsubs {
     flex: 1;
@@ -521,41 +504,6 @@ main .stories-child {
   border-bottom: 1px solid rgb(197, 192, 192);
 }
 
-main .stories-child .image {
-  margin-right: 1rem;
-}
-
-/* stuff we need to bring down couse of linters */
-
-.magas article .category {
-  font: bold 16px/26px "Roboto Condensed", sans-serif;
-  color: #f72210;
-  text-transform: uppercase;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.editors article .category a {
-  color: #f72210;
-}
-
-.firstmaga .wrapmaga .category a {
-  display: block;
-  font: bold 16px/33px "Roboto Condensed", sans-serif;
-  color: #f72210;
-  text-transform: uppercase;
-  padding: 0 10px;
-  background-color: rgba(255, 255, 255, 0.9);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-}
-
-.magas article .category span.cat a {
-  color: #f72210;
-}
-
 /* section pick here */
 
 .section-picks {
@@ -610,10 +558,6 @@ main .stories-child .image {
   text-align: left;
 }
 
-div {
-  display: block;
-}
-
 .side-story {
   border-top: 1px solid rgb(175, 171, 171);
   padding: 14px 0;
@@ -627,4 +571,57 @@ div {
 .side-story.heading {
   font-size: 17px;
   line-height: 20px;
+}
+
+/* stuff we need to bring down couse of linters */
+
+.magas article .category span {
+  display: inline-block;
+}
+
+.magas article .category {
+  font: bold 16px/26px "Roboto Condensed", sans-serif;
+  color: #f72210;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.editors article h3 a {
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+}
+
+.editors article .category a {
+  color: #f72210;
+}
+
+.firstmaga .wrapmaga .category a {
+  display: block;
+  font: bold 16px/33px "Roboto Condensed", sans-serif;
+  color: #f72210;
+  text-transform: uppercase;
+  padding: 0 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.magas article .category span.cat a {
+  color: #f72210;
+}
+
+.magas article .category span:first-of-type {
+  padding: 0 7px;
+  background-color: #f72210;
+  color: white;
+  margin-right: 7px;
+}
+
+main .stories-child .image {
+  margin-right: 1rem;
 }
