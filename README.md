@@ -27,7 +27,7 @@ We applied botstrap all trough the project to achieve the desired lay out.
 👤 **Promise Johnson**
 
 - GitHub: [promise-J](https://github.com/promise-J)
-- Twitter: [@twitterhandle](https://twitter.com/Promise94353263)
+- Twitter: [@Promise94353263](https://twitter.com/Promise94353263)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/promise-chiemela-788887142)
 
 ## 🤝 Contributing
