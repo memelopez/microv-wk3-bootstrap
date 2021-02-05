@@ -18,7 +18,7 @@ We applied botstrap all trough the project to achieve the desired lay out.
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://memelopez.github.io/microv-wk3-bootstrap/)
 
 ## Authors
 
