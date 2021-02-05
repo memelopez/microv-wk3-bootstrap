@@ -180,7 +180,7 @@ page-bottom
  --------------------------------------- */
 
 .page-bottom {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 /* into the magazine  */
@@ -259,17 +259,6 @@ div.imagemaga a.zeromaga {
   max-width: inherit;
 }
 
-.magas article .category span {
-  display: inline-block;
-}
-
-.magas article .category span:first-of-type {
-  padding: 0 7px;
-  background-color: #f72210;
-  color: white;
-  margin-right: 7px;
-}
-
 .magazine h5 {
   margin-bottom: 30px;
 }
@@ -298,80 +287,51 @@ div.imagemaga a.zeromaga {
   z-index: 1;
 }
 
-.editors article h3 a {
-  font-size: 24px;
-  line-height: 24px;
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: bold;
-}
-
 /* ------------ subscribe -------------------- */
 
-.subscribe-block > div > div {
-  margin-bottom: 20px;
+.subscon,
+.subsmain {
   background-color: #f4f5f6;
 }
 
-.block-title {
-  font: bold 16px/16px "Roboto Condensed", sans-serif;
-  text-transform: uppercase;
-  padding-bottom: 11px;
-  color: rgba(12, 11, 11, 0.8);
-}
-
-.block-title.red {
-  color: #f72210;
-}
-
-.subscribe-block .subsad {
-  background-color: #f4f5f6;
-  padding: 24px 0 20px;
-}
-
-.adcon .image {
-  position: relative;
-  padding-bottom: 13px;
-  padding-right: 90px;
-}
-
-.subscribe-block .mag-thumb {
-  width: 170px;
-  height: 228px;
-}
-
-.subscribe-block.image img {
+.subscribe-block img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-.subscribe-block .mag-thumb.current {
-  position: absolute;
-  top: 13px;
-  left: 80px;
+.imgnews .actimgnews {
+  width: 100%;
+  height: 170px;
 }
 
-.f1 {
-  -webkit-flex: 1;
-  flex: 1;
+.substitle {
+  color: #f72210;
+  font: bold 16px/16px "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 11px;
 }
 
-.subscribe-block h3 {
+.txtsubs {
+  border: 1px solid #ebebeb;
+}
+
+.txtsusbs h3 {
   line-height: 28px;
   margin-bottom: 15px;
+  display: inline-block;
   font-size: 20px;
   font-family: "Roboto Condensed", sans-serif;
-  position: relative;
   color: black;
   font-weight: bold;
 }
 
-.subscribe-block p {
+.txtsubs p {
   font: 300 15px/21px "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 20px;
 }
 
-.subscribe-block .pelcro-subscribe-button {
+.btnsubs {
   position: relative;
   font: bold 18px/18px "Roboto Condensed", sans-serif;
   cursor: pointer;
@@ -383,7 +343,7 @@ div.imagemaga a.zeromaga {
   border-radius: 3px;
 }
 
-.subscribe-block .pelcro-subscribe-button::after {
+.btnsubs::after {
   width: 6px;
   height: 11px;
   content: "›";
@@ -391,29 +351,48 @@ div.imagemaga a.zeromaga {
   margin-left: 9px;
 }
 
-.element-invisible {
+.imgssubs {
+  width: 250px;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  padding-right: 90px;
+}
+
+.overlap {
+  width: 170px;
+  height: 228px;
+}
+
+/* .backleft {
   position: absolute;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  overflow: hidden;
-  height: 1px;
+  top: 0;
+  left: 10px;
+} */
+
+.frontright {
+  position: absolute;
+  top: 13px;
+  left: 80px;
 }
 
-.subscribe-block .free-signup input {
-  width: 100%;
-  height: 38px;
-  line-height: 38px;
+/* newsletter */
+
+.newscon {
+  background-color: #f4f5f6;
+  height: 100%;
 }
 
-.free-signup .form-text {
-  color: #555;
-  font-size: 14px;
-  background-color: white;
-  border: 1px solid #e0e1e1;
-  text-indent: 9px;
+.subscribe-block h3 {
+  line-height: 28px;
+  margin-bottom: 15px;
 }
 
-.free-signup .form-submit {
+.subscribe-block p {
+  font: 300 15px/21px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+.form-submit {
   color: white;
   text-transform: uppercase;
   cursor: pointer;
@@ -425,73 +404,78 @@ div.imagemaga a.zeromaga {
   background-size: 108px;
   background-repeat: no-repeat;
   background-color: #f61602;
-  border-radius: 3px;
+  border-radius: 0 3px 3px 0;
 }
 
-/* responsive subscribe  */
-
-@media (max-width: 768px) {
-  .subscribe-block > div > div {
-    position: relative;
-    padding-top: 39px !important;
-  }
-
-  .subscribe-block .adcon {
-    text-align: center;
-  }
-
-  .adcon .image {
-    display: inline-block;
-    margin-bottom: 15px;
-    height: 160px;
-  }
-
-  .subscribe-block .col-r .image {
-    height: 170px;
-  }
-
-  /* .subscribe-block > div > div::before {
-    content: "";
-    display: block;
-    height: 18px;
-    background-color: #f4f5f7;
-    border-top: 1px solid #e2e2e2;
-    position: absolute;
-    top: 0;
-    left: -15px;
-    right: -15px;
-  } */
+.free-signup .form-text {
+  color: #555;
+  font-size: 14px;
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: white;
+  border: 1px solid #e0e1e1;
+  text-indent: 9px;
+  border-radius: 0 3px 3px 0;
 }
 
-@media (max-width: 991px) {
-  .subscribe-block .col-r .info {
-    padding: 25px 20px 30px;
+.subscribe-block input {
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+}
+
+.hformnews {
+  height: 39px;
+}
+
+/* responsive subs */
+
+@media (min-width: 768px) {
+  .subscon,
+  .newscon {
+    background-color: white;
   }
 
-  .subscribe-block .col-r {
-    text-align: center;
-  }
-
-  .subscribe-block .col-r h3 {
-    text-transform: uppercase;
-  }
-
-  .subscribe-block .col-r form {
+  .newsmain {
     display: flex;
+    flex-direction: row;
   }
 
-  .subscribe-block .col-r .form-submit {
+  .imgnews,
+  .newsmain .txtsubs {
+    flex: 1;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .imgnews,
+  .newsmain .txtsubs {
+    width: 50%;
+  }
+}
+
+@media (max-width: 992px) {
+  .newscon {
+    border-top: 1px solid #dee2e6;
+  }
+
+  .subscribe-block .form-submit {
     border-radius: 0 3px 3px 0;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .subscribe-block {
-    position: relative;
-    padding: 40px 30px 0;
-    max-width: 1310px;
-    margin: auto;
-    background: #fff;
+@media (min-width: 992px) {
+  .imgnews {
+    width: 48%;
+    max-width: 191px;
+  }
+
+  .subscribe-block section {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+
+  .free-signup {
+    flex-direction: column;
   }
 }
 
@@ -518,41 +502,6 @@ main .top-story-h2 {
 main .stories-child {
   border-top: 1px solid rgb(209, 197, 197);
   border-bottom: 1px solid rgb(197, 192, 192);
-}
-
-main .stories-child .image {
-  margin-right: 1rem;
-}
-
-/* stuff we need to bring down couse of linters */
-
-.magas article .category {
-  font: bold 16px/26px "Roboto Condensed", sans-serif;
-  color: #f72210;
-  text-transform: uppercase;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.editors article .category a {
-  color: #f72210;
-}
-
-.firstmaga .wrapmaga .category a {
-  display: block;
-  font: bold 16px/33px "Roboto Condensed", sans-serif;
-  color: #f72210;
-  text-transform: uppercase;
-  padding: 0 10px;
-  background-color: rgba(255, 255, 255, 0.9);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-}
-
-.magas article .category span.cat a {
-  color: #f72210;
 }
 
 /* section pick here */
@@ -609,10 +558,6 @@ main .stories-child .image {
   text-align: left;
 }
 
-div {
-  display: block;
-}
-
 .side-story {
   border-top: 1px solid rgb(175, 171, 171);
   padding: 14px 0;
@@ -626,4 +571,57 @@ div {
 .side-story.heading {
   font-size: 17px;
   line-height: 20px;
+}
+
+/* stuff we need to bring down couse of linters */
+
+.magas article .category span {
+  display: inline-block;
+}
+
+.magas article .category {
+  font: bold 16px/26px "Roboto Condensed", sans-serif;
+  color: #f72210;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.editors article h3 a {
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+}
+
+.editors article .category a {
+  color: #f72210;
+}
+
+.firstmaga .wrapmaga .category a {
+  display: block;
+  font: bold 16px/33px "Roboto Condensed", sans-serif;
+  color: #f72210;
+  text-transform: uppercase;
+  padding: 0 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.magas article .category span.cat a {
+  color: #f72210;
+}
+
+.magas article .category span:first-of-type {
+  padding: 0 7px;
+  background-color: #f72210;
+  color: white;
+  margin-right: 7px;
+}
+
+main .stories-child .image {
+  margin-right: 1rem;
 }
